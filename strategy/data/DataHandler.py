@@ -138,7 +138,7 @@ class DataHandler:
         self.s.run()
 
 
-m = DataHandler("ethusdt")
+m = DataHandler("btcusdt")
 m.update_all_data()
 
 # m.update_data("ethusdt", '1min')
