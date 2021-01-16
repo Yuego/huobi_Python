@@ -26,3 +26,7 @@ class TradeDetailEvent:
             for trade_detail in self.data:
                 trade_detail.print_object()
                 print()
+
+    def return_object(self, format_data=""):
+        if len(self.data):
+            return self.data
