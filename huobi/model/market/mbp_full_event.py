@@ -31,3 +31,14 @@ class MbpFullEvent:
         PrintBasic.print_basic(self.ch, format_data + "Topic")
         PrintBasic.print_basic(self.ts, format_data + "Timestamp")
         self.data.print_object(format_data + "\t")
+
+    def return_object(self, format_data=""):
+        obj = {"id": self.data.seqNum, "prevSeqNum": self.data.prevSeqNum}
+        for i, entry in enumerate(self.data.bids):
+            obj["bids_" + str(i) + "_price"] = entry.price
+            obj["bids_" + str(i) + "_amount"] = entry.amount
+        for i, entry in enumerate(self.data.asks):
+            obj["asks_" + str(i) + "_price"] = entry.price
+            obj["asks_" + str(i) + "_amount"] = entry.amount
+        return obj
+
