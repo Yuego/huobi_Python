@@ -16,11 +16,24 @@ class CandlestickEvent:
         self.ch = ""
         self.ts = 0
         self.tick = Candlestick()
-
-
+        
     def print_object(self, format_data=""):
         from huobi.utils.print_mix_object import PrintBasic
         PrintBasic.print_basic(self.ts, format_data + "Unix Time")
         PrintBasic.print_basic(self.ch, format_data + "Channel")
         if self.tick:
             self.tick.print_object()
+
+    def return_object(self, format_data=""):
+        # from huobi.utils.print_mix_object import PrintBasic
+        # PrintBasic.print_basic(self.ts, format_data + "Unix Time")
+        # PrintBasic.print_basic(self.ch, format_data + "Channel")
+        if self.tick:
+            return {"high": self.tick.high,
+                    "low": self.tick.low,
+                    "open": self.tick.open,
+                    "close": self.tick.close,
+                    "amount": self.tick.amount,
+                    "count": self.tick.count,
+                    "vol": self.tick.vol,
+                    "id": self.tick.id}
