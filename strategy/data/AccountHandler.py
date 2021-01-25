@@ -1,6 +1,7 @@
 from huobi.client.account import AccountClient, PrintBasic
 from huobi.client.margin import MarginClient
 import pandas as pd
+from TradeHandler import TradeHandler
 from huobi.constant import *
 from huobi.constant import *
 from huobi.constant import *
@@ -19,6 +20,7 @@ class AccountHandler:
         self.asset = {}
         self.balance = pd.DataFrame(columns=['account', 'currency', 'type', 'balance'])
         self.margin = {}
+        self.th = TradeHandler()
 
     def get_accounts(self):
         self.accounts = self.account_client.get_accounts()
@@ -57,10 +59,28 @@ class AccountHandler:
         list_obj = self.account_client.get_account_ledger(account_id=account_id)
         LogInfo.output_list(list_obj)
 
+    def adjust_position(self, account, currency, target, last_price):
+        balance = self.balance
+        current_balance = balance[(balance['account'] == account) & (balance['currency'] == currency)]
+        if len(current_balance):
+            current_position = current_balance['balance'].values[0]
+        else:
+            current_position = 0.0
+
+        if current_position < target*0.95:
+            amt = (target - current_position) * last_price
+            od = OrderType.BUY_MARKET
+        elif current_position > target*1.05:
+            amt = current_position - target
+            od = OrderType.SELL_MARKET
+
+        print(amt)
+        print(od)
+        self.th.create_order_market(currency + "usdt", account, od, round(amt,6))
+
 
 ac = AccountHandler()
 ac.get_accounts()
 ac.update_asset()
 ac.update_balance()
 ac.get_cross_margin_account()
-print(ac.margin)
