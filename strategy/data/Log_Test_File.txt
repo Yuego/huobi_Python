@@ -1,0 +1,11 @@
+INFO: 01/26/2021 01:38:47 Logging test: 0
+INFO: 01/26/2021 01:38:47 Logging test: 1
+INFO: 01/26/2021 01:38:47 Logging test: 2
+INFO: 01/26/2021 01:38:47 Logging test: 3
+INFO: 01/26/2021 01:38:47 Logging test: 4
+INFO: 01/26/2021 01:38:47 Logging test: 5
+INFO: 01/26/2021 01:38:47 Logging test: 6
+INFO: 01/26/2021 01:38:47 Logging test: 7
+INFO: 01/26/2021 01:38:47 Logging test: 8
+INFO: 01/26/2021 01:38:47 Logging test: 9
+INFO: 01/26/2021 01:41:24 Strategy Module Started
