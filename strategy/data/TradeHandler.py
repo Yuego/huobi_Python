@@ -12,6 +12,7 @@ class TradeHandler:
         self.secret_key = "366684d9-94c5fdf7-ad3b02a0-446bf"
         self.trade_client = TradeClient(api_key=self.api_key, secret_key=self.secret_key)
         self.algo_client = AlgoClient(api_key=self.api_key, secret_key=self.secret_key)
+        self.trade_log = pd.DataFrame(columns=['Time', 'Amount', 'Fee', 'Price', 'Symbol', 'OrderType'])
 
     def get_feerate(self, symbol):
         list_obj = self.trade_client.get_feerate(symbols=symbol)
@@ -24,8 +25,14 @@ class TradeHandler:
             LogInfo.output_list(list_obj)
 
     def get_match_result(self, symbol):
-        list_obj = self.trade_client.get_match_result(symbol=symbol, size=5)
-        LogInfo.output_list(list_obj)
+        list_obj = self.trade_client.get_match_result(symbol=symbol, size=100)
+        for obj in list_obj:
+            self.trade_log=self.trade_log.append(
+                pd.Series([obj.created_at, obj.filled_amount, obj.filled_fees, obj.price, obj.symbol, obj.type],
+                          index=['Time', 'Amount', 'Fee', 'Price', 'Symbol', 'OrderType']),
+                ignore_index=True)
+        # LogInfo.output_list(list_obj)
+        self.trade_log=self.trade_log.drop_duplicates()
 
     def get_open_orders(self, id, symbol):
         list_obj = self.trade_client.get_open_orders(symbol=symbol, account_id=id, direct=QueryDirection.NEXT)
@@ -35,8 +42,9 @@ class TradeHandler:
 
     def get_order(self, order_id):
         order_obj = self.trade_client.get_order(order_id=order_id)
-        LogInfo.output("======= get order by order id : {order_id} =======".format(order_id=order_id))
-        order_obj.print_object()
+        # LogInfo.output("======= get order by order id : {order_id} =======".format(order_id=order_id))
+        # order_obj.print_object()
+        return order_obj
 
     def batch_cancel(self, account_id):
         # cancel all the open orders under account
@@ -48,11 +56,11 @@ class TradeHandler:
                                                   source=OrderSource.API, amount=amount, price=price)
         LogInfo.output("created order id : {id}".format(id=order_id))
 
-    def create_order_market(self,symbol, account_id, order_type, value):
+    def create_order_market(self, symbol, account_id, order_type, value):
         order_id = self.trade_client.create_order(symbol=symbol, account_id=account_id,
                                                   order_type=order_type,
                                                   source=OrderSource.API, amount=value, price=None)
-        LogInfo.output("created order id : {id}".format(id=order_id))
+        return order_id
 
     def cancel_order(self, symbol, order_id):
         canceled_order_id = self.trade_client.cancel_order(symbol, order_id)
@@ -60,3 +68,8 @@ class TradeHandler:
             LogInfo.output("cancel order {id} done".format(id=canceled_order_id))
         else:
             LogInfo.output("cancel order {id} fail".format(id=canceled_order_id))
+
+
+# th = TradeHandler()
+# th.get_match_result('btcusdt')
+# print(th.trade_log)
