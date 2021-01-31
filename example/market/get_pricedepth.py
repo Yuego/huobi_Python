@@ -5,7 +5,7 @@ from huobi.utils import *
 
 market_client = MarketClient()
 symbol = "btcusdt"
-depth_size = 6
+depth_size = 20
 depth = market_client.get_pricedepth(symbol, DepthStep.STEP0, depth_size)
 LogInfo.output("---- Top {size} bids ----".format(size=len(depth.bids)))
 i = 0
