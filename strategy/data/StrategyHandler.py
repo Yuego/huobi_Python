@@ -1,9 +1,26 @@
 import sqlite3
 import pandas as pd
+import numpy as np
 
 
 def moving_average(data, parameter):
     return data.rolling(parameter).mean()
+
+
+def boll_band_up(data, parameter):
+    return data.rolling(parameter).mean() + data.rolling(parameter).std()
+
+
+def boll_band_up_2(data, parameter):
+    return data.rolling(parameter).mean() + 2 * data.rolling(parameter).std()
+
+
+def boll_band_low(data, parameter):
+    return data.rolling(parameter).mean() - data.rolling(parameter).std()
+
+
+def boll_band_low_2(data, parameter):
+    return data.rolling(parameter).mean() - 2 * data.rolling(parameter).std()
 
 
 def cross_over(indicator1, indicator2):
@@ -30,9 +47,11 @@ class Strategy:
         self.signal_list = {}
         self.strategy_signal_list = {}
 
-    def get_data(self, *args):
+    def get_data(self, period, *args):
         for arg in args:
-            self.data_list[arg] = pd.read_sql('select * from ' + arg, self.conn)
+            self.data_list[arg] = pd.read_sql('select * from ' + arg, self.conn).drop_duplicates(subset=['id'],
+                                                                                                 keep='last').tail(
+                period)
 
     def get_data_frame(self, table, column):
         data = self.data_list[table]
@@ -78,7 +97,7 @@ class Strategy:
                 pl = last_position * last_rt
                 control = loss_control_func(pnl, *args)
                 current_time = price.index[i]
-                last_signal_index = ((signal_matrix.index - current_time) < 0).sum() - 1
+                last_signal_index = ((signal_matrix.index - current_time) <= 0).sum() - 1
                 last_signals = signal_matrix.iloc[last_signal_index]
                 ls = last_signals['long'] * (last_signals['long'] - last_signals['close_long']) - last_signals[
                     'short'] * (last_signals['short'] - last_signals['close_short'])
@@ -90,8 +109,10 @@ class Strategy:
                 elif ls:
                     current_position = ls
 
-                elif close_ls:
-                    current_position = (last_position + close_ls) / 2
+                elif (last_position > 0) & (close_ls < 0):
+                    current_position = 0
+                elif (last_position < 0) & (close_ls > 0):
+                    current_position = 0
                 else:
                     current_position = last_position
 
@@ -112,18 +133,18 @@ class Strategy:
             return self.get_data_frame(ticker + "_" + freq + "_candle", [method]).pct_change(1)[method]
 
     def back_test(self, ticker, freq, signal, loss_control_func, *args):
-        price = self.get_data_frame(ticker + "_" + freq + "_candle", ['close'])
-        rt = self.get_return(ticker, freq, "close")
+        price = self.get_data_frame(ticker + "_" + freq + "_candle", ['open'])
+        rt = self.get_return(ticker, freq, "open")
         position = self.get_position(price.copy(), rt.copy(), signal, loss_control_func, *args)
         position.append(rt)
         return position
 
-
-strat = Strategy('btcusdt')
-strat.get_data('btcusdt_1min_candle')
-strat.generate_indicator('btcusdt_1min_candle', ['close'], 'btc_5min_ma', moving_average, 5)
-strat.generate_indicator('btcusdt_1min_candle', ['close'], 'btc_10min_ma', moving_average, 10)
-strat.generate_signal('5min_10min_cross_up', cross_over, ['btc_5min_ma', 'btc_10min_ma'])
-strat.generate_signal('5min_10min_cross_down', cross_over, ['btc_10min_ma', 'btc_5min_ma'])
-strat.get_strat_signal('test', long='5min_10min_cross_up', short='5min_10min_cross_down')
-a = strat.backtest('btcusdt', '1min', 'test', loss_control, -0.1)
+#
+# strat = Strategy('btcusdt')
+# strat.get_data('btcusdt_1min_candle')
+# strat.generate_indicator('btcusdt_1min_candle', ['close'], 'btc_5min_ma', moving_average, 5)
+# strat.generate_indicator('btcusdt_1min_candle', ['close'], 'btc_10min_ma', moving_average, 10)
+# strat.generate_signal('5min_10min_cross_up', cross_over, ['btc_5min_ma', 'btc_10min_ma'])
+# strat.generate_signal('5min_10min_cross_down', cross_over, ['btc_10min_ma', 'btc_5min_ma'])
+# strat.get_strat_signal('test', long='5min_10min_cross_up', short='5min_10min_cross_down')
+# a = strat.back_test('btcusdt', '1min', 'test', loss_control, -0.1)
