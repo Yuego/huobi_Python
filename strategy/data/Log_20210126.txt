@@ -1,0 +1,388 @@
+INFO: 01/26/2021 01:46:02 Strategy Module Started
+INFO: 01/26/2021 01:46:25 Strategy Module Started
+INFO: 01/26/2021 02:14:53 Strategy Module Started
+DEBUG: 01/26/2021 02:14:53 Starting new HTTPS connection (1): api.huobi.pro:443
+DEBUG: 01/26/2021 02:14:54 https://api.huobi.pro:443 "GET /v1/account/accounts?AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A14%3A53&Signature=GBM1DRVkAWmUdCIou6uORaAFo9NvTDMafcguk9Gs9Qg%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:14:54 Accounts Module Started
+DEBUG: 01/26/2021 02:14:54 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A14%3A54&Signature=VDwqD1RogZ7NmV%2BX2g66zEtuH2UPS8wFZXLS3iLMaPA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:14:54 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A14%3A54&Signature=x4%2B0TuNGdS0wy5Mnluxl5f9GyvJ6bN8HxOsnETgyLoI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:14:54 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A14%3A54&Signature=xgoq1KjPGXxF6DIBfJ2xvO3FWFovBFpCMfz2jCSiNNw%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:14:54 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A14%3A54&Signature=LFTTRJFKAfNt9tT%2FH6YULprKPrk1NWrabP2pnPfAsB4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:14:54 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A14%3A54&Signature=35XCvJBlDQ3VP8vX4eCyvbuEm5ROJUdwRG2MHr8ujH0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:14:54 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A14%3A54&Signature=ar77fxWCJPXneoN09%2Bq9l%2FwXCNzg3phFHlLaqalJhVA%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:14:54 NumExpr defaulting to 8 threads.
+INFO: 01/26/2021 02:14:56 Updated Strategy at:14:14:56
+INFO: 01/26/2021 02:14:56 Last Candle TimeStamp2021-01-26 14:14:00
+INFO: 01/26/2021 02:18:25 Strategy Module Started
+DEBUG: 01/26/2021 02:18:25 Starting new HTTPS connection (1): api.huobi.pro:443
+DEBUG: 01/26/2021 02:18:25 https://api.huobi.pro:443 "GET /v1/account/accounts?AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A18%3A25&Signature=XFE3xbvAaQ69rUsXffUQtc77YV41BpATGP%2Ba3XnbRYs%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:18:25 Accounts Module Started
+DEBUG: 01/26/2021 02:18:26 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A18%3A25&Signature=%2FIPal6TL7ET9Qfg76Mm6IMOdmFdQrYZXgqm3ESV3OlE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:18:26 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A18%3A26&Signature=FY4T5bQThxNjoF8eEF3d63DpPuD8ZoNbQrQ8AMIZyng%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:18:26 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A18%3A26&Signature=XL83swhibDpXz5fagSGadvqXXw6ao5wojrWKLW1JOWo%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:18:26 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A18%3A26&Signature=sl2R%2BDvBUlvCgXxe59V1r1%2BXJkxLRvup9b8CJnPZi0M%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:18:26 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A18%3A26&Signature=FqySdLJQTup8AEOHbEJTgj4Qm2%2FI31WeqFZeBLUY%2BIY%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:18:26 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A18%3A26&Signature=rO3lDUiyRvyeP9w%2FmZ%2F0I88YbD0ixaesFOQ1hacnWDM%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:18:26 NumExpr defaulting to 8 threads.
+INFO: 01/26/2021 02:18:28 Updated Strategy at 14:18:28
+INFO: 01/26/2021 02:18:28 Last Candle TimeStamp: 2021-01-26 14:18:00
+INFO: 01/26/2021 02:19:33 Strategy Module Started
+DEBUG: 01/26/2021 02:19:33 Starting new HTTPS connection (1): api.huobi.pro:443
+DEBUG: 01/26/2021 02:19:33 https://api.huobi.pro:443 "GET /v1/account/accounts?AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A19%3A33&Signature=blm%2Ff05F9WTf%2FZ3XQzxhcJxRTY4%2Ft0t%2Fth65IeIHUSw%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:19:33 Accounts Module Started
+DEBUG: 01/26/2021 02:19:33 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A19%3A33&Signature=yOearho1r5ALALLGHLglvSd6wzGiH0hNlBf5IdTHspw%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:19:34 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A19%3A33&Signature=AoBJ4Y52%2BUUTQ%2BYZNQg2WraYjEScZ%2FVIFNP2XrHyZi4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:19:34 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A19%3A34&Signature=G2ixV1doB60D5ovRX9MA86TQZ5rtUpjp3bUKMOLUCWc%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:19:34 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A19%3A34&Signature=8Qtd2%2Bn2JbAHJdKEWEX%2BgAVEWthnyPgawbZatC8Dih4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:19:34 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A19%3A34&Signature=cEmFNaUfs0NcIYXNQV1JI9qgcr6NRCfeugI3TPQSCEI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:19:34 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A19%3A34&Signature=dVYbRunkON1C0nACGE3c340BYEJaNTSbTS4NPL%2BJGe8%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:19:34 NumExpr defaulting to 8 threads.
+INFO: 01/26/2021 02:19:36 Updated Strategy at 14:19:36
+INFO: 01/26/2021 02:19:36 Last Candle TimeStamp: 2021-01-26 14:19:00
+INFO: 01/26/2021 02:19:36 Latest Position:-1.0
+INFO: 01/26/2021 02:19:36 Latest Price:31884.13
+DEBUG: 01/26/2021 02:20:06 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A06&Signature=dMcLL5e8IhnWO0NH3WwrTfeso%2FnwWMVA2Jl%2FIbsHewY%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:06 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A06&Signature=YUod7lZakGyS8HQc%2FHrVXO6yhT8v0ip5u6RGNeWKj1Y%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:06 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A06&Signature=38htRCpFyrCfxPac6Lhaogw0HP2OP5OtXPd7xjwL80o%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:06 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A06&Signature=TeX9Ni82N4LbE5nWAV9ytxV563GbV2aq7USOM%2BbZI3I%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:07 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A07&Signature=%2F8HEwwm9WnXDpfhmmlpL7KUZFZs2ZSqB6stRX5VNmWQ%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:07 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A07&Signature=iZ8FIs69Vii6stC38MTl7rkXz%2FxOEwlfsZsTdsi9GZY%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:20:08 Updated Strategy at 14:20:08
+INFO: 01/26/2021 02:20:08 Last Candle TimeStamp: 2021-01-26 14:19:00
+INFO: 01/26/2021 02:20:08 Latest Position:-1.0
+INFO: 01/26/2021 02:20:08 Latest Price:31884.13
+DEBUG: 01/26/2021 02:20:38 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A38&Signature=8oCQx%2FiFIUcARdG4LHguddu%2FyuJ35L994MQHmCsrPFI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:39 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A38&Signature=6smeTilEhazkmCEJVp5cVozpLKVIWcO4CxUoGFnF4xM%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:39 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A39&Signature=wi49CC3cpQ3LBdRLXULznxjb%2F%2B%2FpIhs%2F1enXISKMSeo%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:39 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A39&Signature=8MmhzQzUUydks9V9NxgRhfx5Iv9a7lAN9K8kjI33VqE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:39 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A39&Signature=HiEMRsVJzrPgQIxaVqT3CZieXQLPFJ7NT9s2x%2B09J9M%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:20:39 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A20%3A39&Signature=5u54fHfvkhMUGaavWj3nGkh71cDKLoZ1%2BLNP7lJzthc%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:20:41 Updated Strategy at 14:20:41
+INFO: 01/26/2021 02:20:41 Last Candle TimeStamp: 2021-01-26 14:20:00
+INFO: 01/26/2021 02:20:41 Latest Position:-1.0
+INFO: 01/26/2021 02:20:41 Latest Price:31838.69
+INFO: 01/26/2021 02:21:31 Strategy Module Started
+DEBUG: 01/26/2021 02:21:31 Starting new HTTPS connection (1): api.huobi.pro:443
+DEBUG: 01/26/2021 02:21:31 https://api.huobi.pro:443 "GET /v1/account/accounts?AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A21%3A31&Signature=t8vkhiMDxowdNEqm33Ndq5zWpYDuW64X0KsKGJ1KQbc%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:21:31 Accounts Module Started
+DEBUG: 01/26/2021 02:21:32 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A21%3A31&Signature=It5bnc%2F15Ub68DffUc2gC5gq5XaR%2B7vV5HS76Nmf1ns%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:21:32 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A21%3A32&Signature=6oDEfaMRULyWZbK%2Byl6HgTf3P1mJqaC%2FG3B0tow13wc%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:21:32 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A21%3A32&Signature=KNmg8OI%2FOZXRBGSNCE0gY7vZWj%2FMcUSjDADw5TkJy20%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:21:32 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A21%3A32&Signature=JyWB0TDQhk8HF4htmX4MOqWbLz683OhYlSc0pDlsy2U%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:21:32 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A21%3A32&Signature=cs9jlSmJOGAhyd9biJxTP3t8CenYDjL%2Fh3z8ejZF%2BiY%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:21:32 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A21%3A32&Signature=OxA2NrUO%2Fx1A8ZlgH6Qw3LnwigQvR3S7UJlX2cO4wIE%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:21:32 NumExpr defaulting to 8 threads.
+INFO: 01/26/2021 02:21:32     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:21:34 Updated Strategy at 14:21:34
+INFO: 01/26/2021 02:21:34 Last Candle TimeStamp: 2021-01-26 14:21:00
+INFO: 01/26/2021 02:21:34 Latest Position:-1.0
+INFO: 01/26/2021 02:21:34 Latest Price:31823.39
+DEBUG: 01/26/2021 02:22:04 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A22%3A04&Signature=c9EOWgB0G8xn46roXyKhiGi7OHcUJuoJ%2FiS5V6nucuY%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:22:04 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A22%3A04&Signature=sTyf71s8oQJv%2FTV26Qt%2FAKLGXbwpsaGyV9WZdEz3vqI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:22:04 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A22%3A04&Signature=nlCMrlEajen1EAExQilIKCGQ8Iqu5xWP%2BL319BvxYx0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:22:04 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A22%3A04&Signature=ufmnNMYcGJB77DsK36%2FzboEdAa2AvMAAVilHHNpowk0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:22:05 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A22%3A04&Signature=7Ynct4Y3EM%2B0aNbXDlVXvzfk6PsaOKiQyRDCoayEpus%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:22:05 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A22%3A05&Signature=KJHWVw%2F8XzGcwe6laiCvtZAqYHiIAgoJONbkggkthEU%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:22:05     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:22:06 Updated Strategy at 14:22:06
+INFO: 01/26/2021 02:22:06 Last Candle TimeStamp: 2021-01-26 14:21:00
+INFO: 01/26/2021 02:22:06 Latest Position:-1.0
+INFO: 01/26/2021 02:22:06 Latest Price:31823.39
+INFO: 01/26/2021 02:38:41 Strategy Module Started
+DEBUG: 01/26/2021 02:38:41 Starting new HTTPS connection (1): api.huobi.pro:443
+DEBUG: 01/26/2021 02:38:41 https://api.huobi.pro:443 "GET /v1/account/accounts?AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A38%3A41&Signature=2QLCpiWi6AF%2FbZUtOJlCjBog1yq%2B4hHqc8%2F8BuWND%2FU%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:38:41 Accounts Module Started
+DEBUG: 01/26/2021 02:38:41 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A38%3A41&Signature=sKnFAu33Z4%2Fwl6k8CkdG4C%2FFM5ud4NyY0sfoppMAxQ4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:38:42 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A38%3A41&Signature=88bd%2FLaVz9Tsiy9eepm3tleLWcZ2nImBTzIZGdEd8BY%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:38:42 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A38%3A42&Signature=NmCIJhyV9M7E4uy7mtxYL9vbzpL8sZ4W94Vkz3VeJi0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:38:42 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A38%3A42&Signature=5ctDrrCgu9uDPKp6F%2BGigmfz6g2cTLkA0GN%2B%2BvPbTfs%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:38:42 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A38%3A42&Signature=u3df7ThQgqsDN5MsXFB2RCC0IaFvOZ2KwJ0c8mlTBYA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:38:42 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A38%3A42&Signature=d7%2BS85vnKUfBcIbgMaQUWqEJ3yRGeL8eB%2B%2B8BnsbwRc%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:38:42 NumExpr defaulting to 8 threads.
+DEBUG: 01/26/2021 02:38:42 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btc&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A38%3A42&Signature=pVSxV5U6ZtMwdu2Jxwlhk1AEb75%2BVO%2FLOIBkG54Ni6Q%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:39:19 Strategy Module Started
+DEBUG: 01/26/2021 02:39:19 Starting new HTTPS connection (1): api.huobi.pro:443
+DEBUG: 01/26/2021 02:39:20 https://api.huobi.pro:443 "GET /v1/account/accounts?AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A39%3A19&Signature=5QqxmDkcqqg59%2FZfTL%2B8Eqec3PE3TFA09flSJU4wn%2BI%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:39:20 Accounts Module Started
+DEBUG: 01/26/2021 02:39:20 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A39%3A20&Signature=0PxmCubTJHgzYthre3gHK7QMvhDGJE7W34F8lbt0v1E%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:39:20 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A39%3A20&Signature=Y7FqDSGIR%2FB5osOjM%2F%2BEsZEnrpWOpSnrWyPxylybRMI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:39:20 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A39%3A20&Signature=%2F5mfRkohrRNHbvo4FKxHHNEcLSnKjojORWO1v3wKm28%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:39:20 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A39%3A20&Signature=VSlRfgkDiq%2BrxTauOXclKeXkFfmihLQ875Tprk6pjL8%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:39:20 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A39%3A20&Signature=EyJgWGmqZxedFEV%2B0xkAmbwE5rmHAzUOza%2BFkopJmvk%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:39:20 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A39%3A20&Signature=SDZQIAvLBAx%2FwVYBnlG%2FWcxhrzYcJOifID4C2WMLtrM%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:39:20 NumExpr defaulting to 8 threads.
+DEBUG: 01/26/2021 02:39:20 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A39%3A20&Signature=d%2BirCQQc1EnQV13EfSGU%2BRvuEjqKlFJw3ouEjp1Q%2BQ4%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:40:16 Strategy Module Started
+DEBUG: 01/26/2021 02:40:16 https://api.huobi.pro:443 "GET /v1/account/accounts?AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A16&Signature=I4T4s5qcfjRyVdkJxM9Miir4BsA3oVzthgPdx3zIALg%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:40:16 Accounts Module Started
+DEBUG: 01/26/2021 02:40:16 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A16&Signature=ujmvaMQqqXAAqtWVYPRmi%2BKohrA%2FN24RDZhccT5zcXk%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:17 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A16&Signature=VNK%2FvP6uQqbBv0SC3Wro%2BFNoPY25TtBGWENI9Ukjsfg%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:17 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A17&Signature=SSPIlHHpYeoo%2FYWbEVjJPH2YcjDWbnjYdDWUM2tEjDc%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:17 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A17&Signature=OgotUbHecqPwL9kK%2B3L6o0QsvHd8%2FWhqb7vE57d1hfQ%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:17 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A17&Signature=GfE24dHAhiJwDuV4lFoSiGYdUiLOBzELrkXh%2BM1lbWI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:17 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A17&Signature=V15haQ8X7Kg0ZgCFGEq9IAzJgY0HCkx5Q85n4CmQL0o%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:40:17 NumExpr defaulting to 8 threads.
+DEBUG: 01/26/2021 02:40:17 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A17&Signature=PHzXLHxSUvwfRkco58kTPWUW3NPznnlu6v0MAsC1X0w%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:40:17     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:40:19 Updated Strategy at 14:40:19
+INFO: 01/26/2021 02:40:19 Last Candle TimeStamp: 2021-01-26 14:39:00
+INFO: 01/26/2021 02:40:19 Latest Position:1.0
+INFO: 01/26/2021 02:40:19 Latest Price:31836.58
+INFO: 01/26/2021 02:40:29 Strategy Module Started
+DEBUG: 01/26/2021 02:40:29 https://api.huobi.pro:443 "GET /v1/account/accounts?AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A29&Signature=sGtWznIHyPPT28NezALDO9TLrhWnV%2BXLU67j5SKolP0%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:40:29 Accounts Module Started
+DEBUG: 01/26/2021 02:40:29 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A29&Signature=UG1Cveutnz0EFOb4KdxMySwtuI0SweJkGvWfPiGJll4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:30 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A29&Signature=QIZ3B4I6gkDwkbHAbkBSEbv54Wa9JQD1gwzAR93G7ZY%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:30 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A30&Signature=%2FauiYwCqCd79b1USab1QsWsQ9npqGC9pYQkLd7GORh0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:30 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A30&Signature=MDU%2F3O8v%2FVudJXPS5q431oMbixixIEei4TE7zKxaD2Q%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:30 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A30&Signature=xIJO%2F1Pigms4mwLRJsuh2LA%2FPIowsqYXNXvRh0J2ing%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:40:30 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A30&Signature=s4s7akHXBdabiAlhvzZfGm58ippzg4LNzhWOLXaCCSw%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:40:30 NumExpr defaulting to 8 threads.
+DEBUG: 01/26/2021 02:40:30 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A40%3A30&Signature=X9yA24QJW4mCCatsK5braQMt0GtBc3HXSIWaWR1ScrA%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:40:30     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:40:32 Updated Strategy at 14:40:32
+INFO: 01/26/2021 02:40:32 Last Candle TimeStamp: 2021-01-26 14:40:00
+INFO: 01/26/2021 02:40:32 Latest Position:1.0
+INFO: 01/26/2021 02:40:32 Latest Price:31864.8
+DEBUG: 01/26/2021 02:41:02 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A02&Signature=8KdC1cXlrqJu1FE6d00jWAKDtBFl9iYBBZ%2FfzAMgD20%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:02 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A02&Signature=vunM%2Flh%2Bv4x2u51q6c0CN4ADGBsO6k0H1XiWG60fWtI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:03 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A02&Signature=EG4vGUPDUQHpEyZu5wNVYXrvKpDYkIISIyC5To%2FDsmE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:03 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A03&Signature=ovcVMAoPIhDLmXdmtBNb3wlNu65rhK3fE7WOmlRuHRA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:03 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A03&Signature=WG1e0hqFePY9SmIlg3nr9CPwfDI%2BDMTq9ogV9wZEvQg%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:03 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A03&Signature=8DX20s3QaHKmx%2B7baVZVs%2BqyA79lDXOBLwVtEeVf%2Fs4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:03 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A03&Signature=dXfumxwohidmCeWyfgoD3a7Nll%2FdGkGGRvtE0uhScUc%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:41:03     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:41:05 Updated Strategy at 14:41:05
+INFO: 01/26/2021 02:41:05 Last Candle TimeStamp: 2021-01-26 14:40:00
+INFO: 01/26/2021 02:41:05 Latest Position:1.0
+INFO: 01/26/2021 02:41:05 Latest Price:31864.8
+DEBUG: 01/26/2021 02:41:35 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A35&Signature=YSnwJqFxmcOnE1MU9pBIe8zUCOX7p9a%2BK2ueAxTLEPk%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:35 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A35&Signature=yPIJlcDR%2FSQJyDvDAUtSfEJiLwmKW1Oh4s9zRdwWmSg%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:35 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A35&Signature=8b%2FMqxamz8u%2F7n%2F%2BEyJfQop2xEmWReupo1uBfC7fewU%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:35 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A35&Signature=Q6zQqsjqboqGGDP3CFgMZfux%2FyI6ChANXEA1VLskEpc%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:35 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A35&Signature=xWQHWm0BWwh%2F1%2F%2BsOrS5EjOX4tOPhni4Qhm%2Bt00%2FY80%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:35 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A35&Signature=mkou5k48Eb50PbdGZIXzq67VLLHdX%2FcUwn3lmju%2FPMw%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:41:35 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A41%3A35&Signature=M0%2FhjySWHDTb5vMvg81lVlkQ0G1O8ey6a5PxByelTbw%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:41:35     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:41:37 Updated Strategy at 14:41:37
+INFO: 01/26/2021 02:41:37 Last Candle TimeStamp: 2021-01-26 14:41:00
+INFO: 01/26/2021 02:41:37 Latest Position:1.0
+INFO: 01/26/2021 02:41:37 Latest Price:31871.28
+DEBUG: 01/26/2021 02:42:07 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A07&Signature=%2FzfOcQxA467RG9dzCKfh8W0smLwqlpeT5KNdKJCrkfA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:07 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A07&Signature=S78Bj0zkbn5WO1N1Tp%2F%2BQFB8MTMTIrJdQWFYK2VLQ8I%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:07 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A07&Signature=mUesXp%2BKAAvVbZOyD73ncKBSS9EdHBxbsud%2FSD8JKhM%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:08 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A07&Signature=NMZy98UnQ74Lfc9z5DLoIuw3WidH49MegR9H4et6vag%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:08 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A08&Signature=306%2BmXB%2FkhINLNV2hVOwaE6Zyw2jDmB5AliPsrRm29g%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:08 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A08&Signature=nZC%2BbiFqaMbMCMsfkytJUtA51xseyRpQs1uCSPo%2BZV8%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:08 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A08&Signature=HRy3VpllAHcONiHOFRMtct5xFeNTOoII4JGeVFVPKTs%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:42:08     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:42:10 Updated Strategy at 14:42:10
+INFO: 01/26/2021 02:42:10 Last Candle TimeStamp: 2021-01-26 14:41:00
+INFO: 01/26/2021 02:42:10 Latest Position:1.0
+INFO: 01/26/2021 02:42:10 Latest Price:31871.28
+DEBUG: 01/26/2021 02:42:40 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A40&Signature=yczL6AEcS7qXFGlMKi3ql1vwS3JLdkx8CbBjk1aj5L0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:40 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A40&Signature=F4kBzfD1O%2FES0Zmg8ntJISu50fYDRIQkgCPxfrtKEUM%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:40 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A40&Signature=8w3gkOQaEo94U%2FbyPD%2FPRLFZE5iwVggQEgEGaCzfqtQ%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:40 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A40&Signature=cSbAZWPu82Yof8hpvJqKoHhRi9jlcRIFwsZo9KQpnX4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:40 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A40&Signature=CRJpEZlh7IGzm1Ij020UosadeMzg3HPzK6YZNvvFpqE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:40 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A40&Signature=vea1go6CdEwN%2FCEDidYP9kk19bfixT1Iq%2BzFgWJsvVE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:42:41 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A42%3A40&Signature=MuayVitMm3xQAvmxS3kL7rZubUJbFmjyBDoDpZ9faiw%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:42:41     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:42:42 Updated Strategy at 14:42:42
+INFO: 01/26/2021 02:42:42 Last Candle TimeStamp: 2021-01-26 14:42:00
+INFO: 01/26/2021 02:42:42 Latest Position:1.0
+INFO: 01/26/2021 02:42:42 Latest Price:31683.63
+DEBUG: 01/26/2021 02:43:12 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A12&Signature=%2BpLYbIviQlfM6aJ968QhH3R0YTirNX%2BKSezC2XnWCIo%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:12 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A12&Signature=99ZASxtwCsIQOqxpWldzn5gIfpFVwRyExZ78rpG1O0U%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:13 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A12&Signature=QqOratt9dVRcZjR9fP%2FtBi3OPpA91HFXGYTXL5WSU0Y%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:13 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A13&Signature=vCKAdCtjbD8L3v1AbhF30LayAx5iyyrKl%2BD5a8%2Fc5sk%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:13 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A13&Signature=htOjZrXX4ju2Kekh%2FbCtZNfvRcO6QZkXkZCApgVWEjI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:13 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A13&Signature=8lixOmH5NtENN6voy2etsjXWHbRDrZW0KGCN%2FmjzKrg%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:13 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A13&Signature=BNOLFjBqYos5FwwALsvoty%2Fa8UwsyCMpIy8HhboJtOs%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:43:13     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:43:15 Updated Strategy at 14:43:15
+INFO: 01/26/2021 02:43:15 Last Candle TimeStamp: 2021-01-26 14:42:00
+INFO: 01/26/2021 02:43:15 Latest Position:1.0
+INFO: 01/26/2021 02:43:15 Latest Price:31683.63
+DEBUG: 01/26/2021 02:43:45 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A45&Signature=rd7Mk8ETZP9ncdXkFGHVXUD87ZARyIiL2K%2FLFYOinb4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:45 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A45&Signature=SgEvVB%2FxKpdC2%2BEYx1qp0ljdRFSgmHJcKgxRapP%2Fl8E%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:45 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A45&Signature=xPlaSoJMZplUElCCiOW%2FcLlH0oOyIB9o1dadWaoJxuA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:45 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A45&Signature=Nqz6mStZslBS4heI9E5vqJ%2FEQLHTmIWWuaegIbXhRrQ%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:45 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A45&Signature=M3HV42SXHZqt2nF8P7Haive1Ry9yByU08XgKgiWNoBk%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:45 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A45&Signature=lgTizaIL7DeRwtETvKSs22fJpNt6K1Exhks%2BOP0E9zA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:43:45 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A43%3A45&Signature=xRbNURcipONKpYZrOoxpZEjQnSUk%2FaGHm%2FkwU5FsMRg%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:43:46     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:43:47 Updated Strategy at 14:43:47
+INFO: 01/26/2021 02:43:47 Last Candle TimeStamp: 2021-01-26 14:43:00
+INFO: 01/26/2021 02:43:47 Latest Position:-1.0
+INFO: 01/26/2021 02:43:47 Latest Price:31567.26
+DEBUG: 01/26/2021 02:44:17 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A17&Signature=RlQkdXgDFLA%2BwLkg6fHP%2FD%2Fi9F8dvrZowzwG%2By9Q7Aw%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:18 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A17&Signature=7TyCe7pNO1BaHzfe2xAzEUkB%2B%2BdS1axtAaZZ7mJsJCw%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:18 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A18&Signature=IhX462TCLvsjSbgtr1D0VqX1yn7%2FziQ9CkrA78RpkgI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:18 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A18&Signature=q6bqbtBS0hCOygTfYzu5xKcuuZXab%2BzR63gITSdID0A%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:18 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A18&Signature=qN4Y%2FGFBMC842%2Fm0ea6%2FeMWZsGfgE4xbriuSvA5nqQk%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:18 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A18&Signature=zRhAsWiqU3xNsn4x0JhsBpWoBuwGyt9U55ZxUXaf0EE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:18 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A18&Signature=MfggPFxRhDwcs1XoG6Cj97%2B1lhol8sInZ%2FdEMGMg2i4%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:44:18     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:44:20 Updated Strategy at 14:44:20
+INFO: 01/26/2021 02:44:20 Last Candle TimeStamp: 2021-01-26 14:43:00
+INFO: 01/26/2021 02:44:20 Latest Position:-1.0
+INFO: 01/26/2021 02:44:20 Latest Price:31567.26
+DEBUG: 01/26/2021 02:44:50 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A50&Signature=8I4z6XcrkzRRB797ZLgzOCiuWzESQZQ1oxWHht5O0u0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:50 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A50&Signature=gDS9y7yNfVuFHf6wH6naOQg%2Fm8l28OxszGx2gfiq8VA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:50 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A50&Signature=kAP6%2B6n6njjOWSpzokbCQDaB9bHwalz7Z5cooMjc2AA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:50 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A50&Signature=eCfsvtDll643o5qgRf%2FGY35ODEoD2%2B0L0Fs05tkj2OQ%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:50 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A50&Signature=DaMFFtJelWjcGfgk4cChmAAehvmL4suzNLiwXCSrhYg%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:50 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A50&Signature=QrRNgryE24pIBMQW59kmDIQojAU%2FdZWwcVIopM%2Fxljo%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:44:51 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A44%3A50&Signature=d0rJn%2FI6hhit9RiyjE7%2BteysST%2BKuCc4JhGX750W86o%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:44:51     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:44:52 Updated Strategy at 14:44:52
+INFO: 01/26/2021 02:44:52 Last Candle TimeStamp: 2021-01-26 14:44:00
+INFO: 01/26/2021 02:44:52 Latest Position:-1.0
+INFO: 01/26/2021 02:44:52 Latest Price:31584.38
+DEBUG: 01/26/2021 02:45:22 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A22&Signature=e6wbReVWIXsPKUrgkbuzr2Zq2Kg9i2iu2T%2BILTEDi30%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:23 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A22&Signature=Q8isYta2i7Y3ynPCHSBeG7dHHZqTn253lgGnaqm3jww%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:23 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A23&Signature=mjFTXHI0FB%2Fc0giWM94jGaNPog7CVBxO9hBE9Z%2Bb6Uo%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:23 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A23&Signature=jPqGQNUuwuzLYpKuwmPyCIqqDOOgxuH%2BKUXDvpHy%2Fzs%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:23 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A23&Signature=yJQttMG4hTqqGJSDBP6WiZ%2Fy4fSateNWtYsOGnF2CrE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:23 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A23&Signature=c6j%2Bjbx4NiARAqyngn%2BJw6PHECx7u8pR7M4mlQw%2FXy4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:23 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A23&Signature=W8DuUnxhRGpF%2F8cvbJd7IWnjlfuvHrWXP%2BWlflvlSSU%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:45:23     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:45:25 Updated Strategy at 14:45:25
+INFO: 01/26/2021 02:45:25 Last Candle TimeStamp: 2021-01-26 14:44:00
+INFO: 01/26/2021 02:45:25 Latest Position:-1.0
+INFO: 01/26/2021 02:45:25 Latest Price:31584.38
+DEBUG: 01/26/2021 02:45:55 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A55&Signature=CEri%2Fyp7GrMj7n5sxzjYvZampJBYd5UV7Da2erL31Jg%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:55 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A55&Signature=F7072Cm3HGwlZlDZ8PuqWqf8Fjp0n3YIc9f3czp%2FtzY%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:55 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A55&Signature=e4cRWTV%2BCjHl9W%2Bat2P4zGwYBY3iL0HGCBrMevVLleA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:55 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A55&Signature=s3kEvCn7Daxb3nM0YyKsLqMi7DeP5xTxF%2F4wZLfL8vE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:55 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A55&Signature=KV8c1JwO6POA%2FNohltPNeaW3fUb4E1gMHKdRAfNhza8%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:55 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A55&Signature=gwOPR5SM7IP3XXbbDcgNk23R6O%2BnoyOmD9bIm99EswM%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:45:56 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A45%3A55&Signature=2AIYBqxmCa3kXgzwJ1rwHShzxouudz4UPqBsuL9YPfA%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:45:56     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:45:57 Updated Strategy at 14:45:57
+INFO: 01/26/2021 02:45:57 Last Candle TimeStamp: 2021-01-26 14:45:00
+INFO: 01/26/2021 02:45:57 Latest Position:-1.0
+INFO: 01/26/2021 02:45:57 Latest Price:31482.03
+DEBUG: 01/26/2021 02:46:27 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A46%3A27&Signature=AKPTXEtqfaFrA0zh3WaWWupqoPY9YX3YVCK1hADnsXQ%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:46:28 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A46%3A27&Signature=iv7OqvcFJK3%2Bef6oVlPDrMXCGA7uKPdFeoe282CAaAg%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:46:28 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A46%3A28&Signature=Rf1%2BqihC3IOWbcv%2FJr%2F2CN7nBqXZRby6rPlVwGAdv4I%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:46:28 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A46%3A28&Signature=GeOiOBzs%2BqxcL0P8EYnMsWF7bz%2FPEwASE2fZYyWk5U4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:46:28 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A46%3A28&Signature=2mDGcTLs3vJOHtV8efPXqw04pkFR0lXG%2B12ytZQISEw%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:46:28 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A46%3A28&Signature=VIaeUiQaW1DMV8s3cDTXK%2BpDCGVVvSkAGzwCAGForOc%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:46:28 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A46%3A28&Signature=2O3Z7sq7eCwlQRinDzP5j1R3DJAPq14wMDBz1BhIaLE%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:46:28     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:46:30 Updated Strategy at 14:46:30
+INFO: 01/26/2021 02:46:30 Last Candle TimeStamp: 2021-01-26 14:46:00
+INFO: 01/26/2021 02:46:30 Latest Position:-1.0
+INFO: 01/26/2021 02:46:30 Latest Price:31443.5
+DEBUG: 01/26/2021 02:47:00 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A00&Signature=T07Yu9nirAFPlB2fuWqqjuAymtWeJ4tgx%2Bodfx6VBj4%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:00 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A00&Signature=Qhi1VJw%2Fej%2BZrj6pLwU%2BUq9K42tx001ZwhzorevCu%2BE%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:00 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A00&Signature=Afv%2F5saL%2BhKx9Xu8nqh1G%2BTYwwzUV2pP8FVwIDHTdJA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:01 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A00&Signature=JwxK81etuQjx6hsaqRr%2B6EwvHANsvkSNYMCZDmwkS2M%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:01 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A01&Signature=o12BkKc6Jdzfke8J6ImG6H2SzsQf4zar%2FuNUFdAo%2BHk%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:01 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A01&Signature=%2F3sf%2B7uAaY9pVInHHZxq%2BBKk8ded9Gq9QCy2iTZALjI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:01 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A01&Signature=T5rUfrjIBBNKVXtIUk1M9uSGYznovTPo70f2%2Fo9lWms%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:47:01     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:47:03 Updated Strategy at 14:47:03
+INFO: 01/26/2021 02:47:03 Last Candle TimeStamp: 2021-01-26 14:46:00
+INFO: 01/26/2021 02:47:03 Latest Position:-1.0
+INFO: 01/26/2021 02:47:03 Latest Price:31443.5
+DEBUG: 01/26/2021 02:47:33 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A33&Signature=uUqz8S6DIDEP41jtLgl4MNpuZcu1qC1bNxIoHCrvB8Y%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:33 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A33&Signature=BUUeSBgqtzUVIXoVpc4bfIWq1IKT8rkk6zo6saQ%2BGdQ%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:33 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A33&Signature=ohcb1yOKIJGaS8D2coKoxdMIVHp%2BXqcPxg4ae%2Fuq%2BYs%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:33 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A33&Signature=gA6AUxbiekrJXj2BTBsqFT6ZgptQ6Q6M0fNUY%2FC6osI%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:33 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A33&Signature=ZkvAWYqaDKbvS9J0BCOLC11OFmo8i9qnw6hzv3XUaQ8%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:33 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A33&Signature=1wN2J15NMLrtvznPqekHOXRH8hP0txxxOfDhxNrifec%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:47:33 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A47%3A33&Signature=Vf8pA%2F8aDka%2Fqut0a84h2US1i5FL24EOa%2B2g%2FQRjrMY%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:47:34     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:47:35 Updated Strategy at 14:47:35
+INFO: 01/26/2021 02:47:35 Last Candle TimeStamp: 2021-01-26 14:47:00
+INFO: 01/26/2021 02:47:35 Latest Position:-1.0
+INFO: 01/26/2021 02:47:35 Latest Price:31571.88
+DEBUG: 01/26/2021 02:48:05 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A48%3A05&Signature=Qyd1W5YfUmWF%2FRxrVLSXJ1b%2FqgiZ2mHSho8EAx6gciA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:48:06 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A48%3A05&Signature=RaF1T5WKJfOvc4tjJro3DwKXrOqw7FEJpBmJ3HzR2M0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:48:06 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A48%3A06&Signature=DtdNK3v8O28a4QAelSE%2FcNMQyhVigJ5A06r8yoeGhAA%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:48:06 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A48%3A06&Signature=8uPMgZEcJKQDtc4%2BbTwfbtkyNUs62lFljNhqVm4t4x8%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:48:06 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A48%3A06&Signature=Wp0ZMJPEjddOo4wU6yvQdP6mt2JMy%2FqN%2BTZt3qIeVXk%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:48:06 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A48%3A06&Signature=%2Fwf3pA2qLa4qI56tpC4Cpo414Z%2F1Y94EnzlOfTkKTN0%3D HTTP/1.1" 200 None
+DEBUG: 01/26/2021 02:48:06 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-26T06%3A48%3A06&Signature=ZGF41PEj5lZW6GrdihmIlcqR%2BetcwEpoiGDb7bvOfY4%3D HTTP/1.1" 200 None
+INFO: 01/26/2021 02:48:06     account currency    type       balance
+0  14304500      btc   trade  2.989283e-07
+1  14304500     usdt   trade  1.054292e+02
+2  14304500     usdt  frozen  4.000000e-18
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/26/2021 02:48:08 Updated Strategy at 14:48:08
+INFO: 01/26/2021 02:48:08 Last Candle TimeStamp: 2021-01-26 14:47:00
+INFO: 01/26/2021 02:48:08 Latest Position:-1.0
+INFO: 01/26/2021 02:48:08 Latest Price:31571.88
+DEBUG: 01/26/2021 02:48:38 Resetting dropped connection: api.huobi.pro
+DEBUG: 01/26/2021 02:48:38 Starting new HTTPS connection (2): api.huobi.pro:443
