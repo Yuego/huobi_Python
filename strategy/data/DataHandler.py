@@ -122,10 +122,11 @@ class DataHandler:
     def save_1min_candle(self):
         try:
             self.update_candle("1min", 10)
-            print("saved 1min candle")
         except:
             print("connection error")
-        self.s.enter(60, 1, self.save_1min_candle, ())
+        to_sleep_1min = 60 - time.time() % 60
+        print(to_sleep_1min)
+        self.s.enter(to_sleep_1min+1, 1, self.save_1min_candle, ())
 
     def save_5min_candle(self):
         try:
@@ -133,7 +134,8 @@ class DataHandler:
             print("saved 5min candle")
         except:
             print("connection error")
-        self.s.enter(300, 1, self.save_5min_candle, ())
+        to_sleep_5min = 300 - time.time() % 300
+        self.s.enter(to_sleep_5min+1, 1, self.save_5min_candle, ())
 
     def save_15min_candle(self):
         try:
@@ -141,7 +143,8 @@ class DataHandler:
             print("saved 15min candle")
         except:
             print("connection error")
-        self.s.enter(900, 1, self.save_15min_candle, ())
+        to_sleep_15min = 900 - time.time() % 900
+        self.s.enter(to_sleep_15min+1, 1, self.save_15min_candle, ())
 
     def save_30min_candle(self):
         try:
@@ -149,7 +152,8 @@ class DataHandler:
             print("saved 30min candle")
         except:
             print("connection error")
-        self.s.enter(1800, 1, self.save_30min_candle, ())
+        to_sleep_30min = 1800 - time.time() % 1800
+        self.s.enter(to_sleep_30min+1, 1, self.save_30min_candle, ())
 
     def save_60min_candle(self):
         try:
@@ -159,7 +163,8 @@ class DataHandler:
             print("saved 1day candle")
         except:
             print("connection error")
-        self.s.enter(3600, 1, self.save_60min_candle, ())
+        to_sleep_60min = 3600 - time.time() % 3600
+        self.s.enter(to_sleep_60min+1, 1, self.save_60min_candle, ())
 
     # def save_1day_candle(self):
     #     try:
@@ -178,25 +183,13 @@ class DataHandler:
         self.s.enter(10, 1, self.save_trade_data, ())
 
     def update_candle_data(self):
-        self.update_candle("1min", 2000)
-        self.update_candle("5min", 2000)
-        self.update_candle("15min", 2000)
-        self.update_candle("30min", 2000)
-        self.update_candle("60min", 2000)
-        self.update_candle("1day", 2000)
         self.update_trade(2000)
-
-        to_sleep_1min = 60 - time.time() % 60
-        to_sleep_5min = 300 - time.time() % 300
-        to_sleep_15min = 900 - time.time() % 900
-        to_sleep_30min = 1800 - time.time() % 1800
-        to_sleep_60min = 3600 - time.time() % 3600
         self.s.enter(0, 1, self.save_trade_data, ())
-        self.s.enter(to_sleep_1min, 1, self.save_1min_candle, ())
-        self.s.enter(to_sleep_5min, 1, self.save_5min_candle, ())
-        self.s.enter(to_sleep_15min, 1, self.save_15min_candle, ())
-        self.s.enter(to_sleep_30min, 1, self.save_30min_candle, ())
-        self.s.enter(to_sleep_60min, 1, self.save_60min_candle, ())
+        self.s.enter(0, 1, self.save_1min_candle, ())
+        self.s.enter(0, 1, self.save_5min_candle, ())
+        self.s.enter(0, 1, self.save_15min_candle, ())
+        self.s.enter(0, 1, self.save_30min_candle, ())
+        self.s.enter(0, 1, self.save_60min_candle, ())
         self.s.run()
 
     def update_tick_data(self):
