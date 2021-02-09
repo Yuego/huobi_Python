@@ -12187,3 +12187,39 @@ INFO: 01/31/2021 06:50:31     account currency    type       balance
 1  14304500     usdt   trade  1.039371e+02
 2  14304500     usdt  frozen  6.500000e-17
 3  18880462     usdt   trade  5.000000e+01
+INFO: 01/31/2021 06:50:33 ma_system_1day_2030 Last Signal TimeStamp: 2021-01-31 00:00:00
+INFO: 01/31/2021 06:50:33 ma_system_1day_2030 Last Candle TimeStamp: 2021-01-31 00:00:00
+INFO: 01/31/2021 06:50:33 ma_system_1day_2030 Latest Position:-1.0
+INFO: 01/31/2021 06:50:33 ma_system_1day_2030 Latest Price:34210.7
+INFO: 01/31/2021 06:50:33 ma_system_1day_1020 Last Signal TimeStamp: 2021-01-31 00:00:00
+INFO: 01/31/2021 06:50:33 ma_system_1day_1020 Last Candle TimeStamp: 2021-01-31 00:00:00
+INFO: 01/31/2021 06:50:33 ma_system_1day_1020 Latest Position:-1.0
+INFO: 01/31/2021 06:50:33 ma_system_1day_1020 Latest Price:34210.7
+INFO: 01/31/2021 06:50:33 ma_system_60min_1020 Last Signal TimeStamp: 2021-01-31 18:00:00
+INFO: 01/31/2021 06:50:33 ma_system_60min_1020 Last Candle TimeStamp: 2021-01-31 18:00:00
+INFO: 01/31/2021 06:50:33 ma_system_60min_1020 Latest Position:-1.0
+INFO: 01/31/2021 06:50:33 ma_system_60min_1020 Latest Price:33298.86
+DEBUG: 01/31/2021 06:51:33 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=spot&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-31T10%3A51%3A33&Signature=%2BJ9LL3S3pT52c40QSn2MeSpV1lk73ovo9UFr1GCj38g%3D HTTP/1.1" 200 None
+DEBUG: 01/31/2021 06:51:33 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=otc&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-31T10%3A51%3A33&Signature=VfZ2FMc5RIuGpQEkiAUFyQ%2F5EAA2iEBGzR7%2BQXIaIjs%3D HTTP/1.1" 200 None
+DEBUG: 01/31/2021 06:51:34 https://api.huobi.pro:443 "GET /v2/account/asset-valuation?accountType=super-margin&valuationCurrency=USD&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-31T10%3A51%3A33&Signature=Yvznd2PYGtlaWybS2XFmoLT0W9TsPMxMfcwUsGacR70%3D HTTP/1.1" 200 None
+DEBUG: 01/31/2021 06:51:34 https://api.huobi.pro:443 "GET /v1/account/accounts/14304500/balance?account-id=14304500&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-31T10%3A51%3A34&Signature=iLdjhqdFA4Zq5aPVVeR%2Bj2m0YqCqFZYaWpiTPmjHKIM%3D HTTP/1.1" 200 None
+DEBUG: 01/31/2021 06:51:34 https://api.huobi.pro:443 "GET /v1/account/accounts/14668706/balance?account-id=14668706&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-31T10%3A51%3A34&Signature=NC5%2Bxn8s%2Fg3zrKGMavjLYQ%2BxgbfF255IOU5KNpSr%2FLA%3D HTTP/1.1" 200 None
+DEBUG: 01/31/2021 06:51:34 https://api.huobi.pro:443 "GET /v1/account/accounts/18880462/balance?account-id=18880462&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-31T10%3A51%3A34&Signature=Idw3jL5N0QSyGToR7UrGO9CqdNCHhy8OCRcyxH7cmpA%3D HTTP/1.1" 200 None
+DEBUG: 01/31/2021 06:51:34 https://api.huobi.pro:443 "GET /v1/order/matchresults?symbol=btcusdt&size=100&AccessKeyId=db8f342a-3540b528-hrf5gdfghe-5e793&SignatureVersion=2&SignatureMethod=HmacSHA256&Timestamp=2021-01-31T10%3A51%3A34&Signature=rmGGY8CDFxIGz%2BaY2g0IDTKMNccpw4Kb%2FCkNgUprKLw%3D HTTP/1.1" 200 None
+INFO: 01/31/2021 06:51:34     account currency    type       balance
+0  14304500      btc   trade  7.940095e-06
+1  14304500     usdt   trade  1.039371e+02
+2  14304500     usdt  frozen  6.500000e-17
+3  18880462     usdt   trade  5.000000e+01
+INFO: 01/31/2021 06:51:37 ma_system_1day_2030 Last Signal TimeStamp: 2021-01-31 00:00:00
+INFO: 01/31/2021 06:51:37 ma_system_1day_2030 Last Candle TimeStamp: 2021-01-31 00:00:00
+INFO: 01/31/2021 06:51:37 ma_system_1day_2030 Latest Position:-1.0
+INFO: 01/31/2021 06:51:37 ma_system_1day_2030 Latest Price:34210.7
+INFO: 01/31/2021 06:51:37 ma_system_1day_1020 Last Signal TimeStamp: 2021-01-31 00:00:00
+INFO: 01/31/2021 06:51:37 ma_system_1day_1020 Last Candle TimeStamp: 2021-01-31 00:00:00
+INFO: 01/31/2021 06:51:37 ma_system_1day_1020 Latest Position:-1.0
+INFO: 01/31/2021 06:51:37 ma_system_1day_1020 Latest Price:34210.7
+INFO: 01/31/2021 06:51:37 ma_system_60min_1020 Last Signal TimeStamp: 2021-01-31 18:00:00
+INFO: 01/31/2021 06:51:37 ma_system_60min_1020 Last Candle TimeStamp: 2021-01-31 18:00:00
+INFO: 01/31/2021 06:51:37 ma_system_60min_1020 Latest Position:-1.0
+INFO: 01/31/2021 06:51:37 ma_system_60min_1020 Latest Price:33298.86
