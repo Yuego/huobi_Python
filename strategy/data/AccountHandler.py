@@ -84,11 +84,14 @@ class AccountHandler:
             current_position = 0.0
 
         if current_position < target * 0.95:
-            amt = (target - current_position) * last_price
             od = OrderType.BUY_MARKET
-            self.place_market_order(currency, account, od, amt)
+            amt = (target - current_position) * last_price
+            if amt < 5:
+                return
+            else:
+                self.place_market_order(currency, account, od, amt)
         elif current_position > target * 1.05 + 0.00005:
-            amt = round(current_position - target-0.00001,5)
+            amt = round(current_position - target - 0.00001, 5)
             od = OrderType.SELL_MARKET
             print(amt)
             self.place_market_order(currency, account, od, amt)
@@ -98,7 +101,10 @@ class AccountHandler:
             self.th.batch_cancel(account)
             order_id = self.th.create_order_market(currency + "usdt", account, od, round(amt, 6))
             self.open_order = order_id
-        except:
+        except Exception as error:
+            print(error)
+            print(od)
+            print(amt)
             print("CANNOT PLACE ORDER!!!!!")
 
     def check_latest_order(self):
