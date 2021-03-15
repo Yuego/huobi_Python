@@ -102,19 +102,21 @@ class Production():
         logging.info(strategy_name + " Latest Price:" + str(production[0]['open'].iloc[-1]))
 
     def get_strategy_weight(self):
-        pnl_list = []
+        # pnl_list = []
+        # for item in self.strategy_list:
+        #     pnl = self.strategy_list[item][0][['pnl']]
+        #     pnl.columns = [item]
+        #     pnl_list.append(pnl)
+        # pnl = reduce(lambda x, y: pd.merge(x, y, on='id', how='outer'), pnl_list)
+        # pnl = pnl.sort_index()
+        # pnl = pnl.fillna(0)
+        # cov = pnl.tail(16000).cumsum().cov()
+        # x = 1 / (cov.sum(axis=1))
+        # x = x / sum(x)
+        n=len(self.strategy_list)
         for item in self.strategy_list:
-            pnl = self.strategy_list[item][0][['pnl']]
-            pnl.columns = [item]
-            pnl_list.append(pnl)
-        pnl = reduce(lambda x, y: pd.merge(x, y, on='id', how='outer'), pnl_list)
-        pnl = pnl.sort_index()
-        pnl = pnl.fillna(0)
-        cov = pnl.tail(8000).cumsum().cov()
-        x = 1 / (cov.sum(axis=1)) / 7
-        x = x / sum(x)
-        for item in self.strategy_list:
-            self.strategy_weight[item] = round(x.loc[item], 3)
+            self.strategy_weight[item] = 1/n
+        print(self.strategy_weight)
 
     def get_portfolio_position(self):
         position = 0.0
@@ -185,7 +187,7 @@ class Production():
                 self.log_strategy(item)
             self.get_portfolio_position()
             print("Portfolio Position:" + str(self.portfolio_position))
-            self.rebalance_position(0.002)
+            self.rebalance_position(0.003)
             to_sleep_1min = 60 - time.time() % 60
             self.s.enter(to_sleep_1min + 2, 1, self.run_strategy, ())
         else:
