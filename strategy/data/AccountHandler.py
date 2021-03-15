@@ -93,8 +93,10 @@ class AccountHandler:
         elif current_position > target * 1.05 + 0.00005:
             amt = round(current_position - target - 0.00001, 5)
             od = OrderType.SELL_MARKET
-            print(amt)
-            self.place_market_order(currency, account, od, amt)
+            if amt < 0.0001:
+                return
+            else:
+                self.place_market_order(currency, account, od, amt)
 
     def place_market_order(self, currency, account, od, amt):
         try:
