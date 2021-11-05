@@ -9,8 +9,8 @@ import sqlite3
 
 class AccountHandler:
     def __init__(self):
-        self.api_key = "db8f342a-3540b528-hrf5gdfghe-5e793"
-        self.secret_key = "366684d9-94c5fdf7-ad3b02a0-446bf"
+        self.api_key = "3d9d4097-07a386ad-d0d851bf-hrf5gdfghe"
+        self.secret_key = "2322e9dc-7fe17af4-2e92dbcc-745af"
         self.account_client = AccountClient(api_key=self.api_key, secret_key=self.secret_key)
         self.margin_client = MarginClient(api_key=self.api_key, secret_key=self.secret_key)
         self.accounts = []

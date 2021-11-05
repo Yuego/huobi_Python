@@ -1,10 +1,13 @@
+import sched
+import sqlite3
+import time
+import time
+
+import pandas as pd
+
 from huobi.client.market import MarketClient
 from huobi.constant import *
 from huobi.utils import *
-import pandas as pd
-import sqlite3
-import time
-import sched, time
 
 
 def candle_to_dict(candle):
@@ -35,8 +38,7 @@ def error(e: 'HuobiApiException'):
 
 
 class DataHandler:
-    def __init__(self, symbol):
-        self.symbol = symbol
+    def __init__(self):
         self.market_client = MarketClient()
         self.candle_tick = pd.DataFrame(columns=['id', 'open', 'close', 'high', 'low', 'amount', 'count', 'vol'])
         self.mbp_tick = pd.DataFrame(
@@ -46,24 +48,31 @@ class DataHandler:
                      "asks_0_amount", "asks_1_amount", "asks_2_amount", "asks_3_amount", "asks_4_amount",
                      "bids_0_amount", "bids_1_amount", "bids_2_amount", "bids_3_amount", "bids_4_amount"])
         self.trade_tick = pd.DataFrame(columns=['id', 'price', 'amount', 'direction'])
+        self.tickers = []
         self.conn = sqlite3.connect('market.db', timeout=10)
         self.s = sched.scheduler(time.time, time.sleep)
 
-    def get_candle_list(self, interval, length):
-        list_obj = self.market_client.get_candlestick(self.symbol, interval, length)
+    def get_tickers(self):
+        self.tickers = []
+        list_obj = self.market_client.get_market_tickers()
+        for obj in list_obj:
+            self.tickers.append(obj.symbol)
+
+    def get_candle_list(self, interval, length, symbol):
+        list_obj = self.market_client.get_candlestick(symbol, interval, length)
         return list_obj
 
-    def get_trade_list(self, length):
-        list_obj = self.market_client.get_history_trade(self.symbol, length)
+    def get_trade_list(self, length, symbol):
+        list_obj = self.market_client.get_history_trade(symbol, length)
         return list_obj
 
-    def get_candle(self, interval, length):
-        list_obj = self.get_candle_list(interval, length)
+    def get_candle(self, interval, length, symbol):
+        list_obj = self.get_candle_list(interval, length, symbol)
         data = parse_candle_list(list_obj)
         return data
 
-    def get_trade(self, length):
-        list_obj = self.get_trade_list(length)
+    def get_trade(self, length, symbol):
+        list_obj = self.get_trade_list(length, symbol)
         data = parse_trade_list(list_obj)
         return data
 
@@ -79,13 +88,13 @@ class DataHandler:
         else:
             data.sort_values(by='id', ascending=True).to_sql(table, self.conn, if_exists='replace', index=False)
 
-    def update_candle(self, interval, freq):
-        candle = self.get_candle(interval, freq)
-        self.update_database(self.symbol + '_' + interval + '_' + 'candle', candle)
+    def update_candle(self, interval, freq, symbol):
+        candle = self.get_candle(interval, freq, symbol)
+        self.update_database(symbol + '_' + interval + '_' + 'candle', candle)
 
-    def update_trade(self, freq):
-        trade = self.get_trade(freq)
-        self.update_database(self.symbol + '_' + 'trade', trade)
+    def update_trade(self, freq, symbol):
+        trade = self.get_trade(freq, symbol)
+        self.update_database(symbol + '_' + 'trade', trade)
 
     def candle_callback(self, candlestick_event: 'CandlestickEvent'):
         candle = candlestick_event.return_object()
@@ -103,19 +112,19 @@ class DataHandler:
             self.trade_tick = self.trade_tick.append(trade_to_dict(trade), ignore_index=True)
         # print(self.trade_tick)
 
-    def candle_subscribe(self, interval):
-        self.market_client.sub_candlestick(self.symbol, interval, self.candle_callback, error)
+    def candle_subscribe(self, interval, symbol):
+        self.market_client.sub_candlestick(symbol, interval, self.candle_callback, error)
 
-    def mbp_subscribe(self):
-        self.market_client.sub_mbp_full(self.symbol, MbpLevel.MBP5, self.mbp_callback, error)
+    # def mbp_subscribe(self, symbol):
+    #     self.market_client.sub_mbp_full(symbol, MbpLevel.MBP5, self.mbp_callback, error)
 
-    def trade_subscribe(self):
-        self.market_client.sub_trade_detail(self.symbol, self.trade_callback, error)
+    def trade_subscribe(self, symbol):
+        self.market_client.sub_trade_detail(symbol, self.trade_callback, error)
 
-    def save_tick_data(self):
-        self.update_database(self.symbol + "_tick_trade", self.trade_tick)
-        self.update_database(self.symbol + "_tick_mbp", self.mbp_tick)
-        self.update_database(self.symbol + "_tick_candle", self.candle_tick)
+    def save_tick_data(self, symbol):
+        self.update_database(symbol + "_tick_trade", self.trade_tick)
+        self.update_database(symbol + "_tick_mbp", self.mbp_tick)
+        self.update_database(symbol + "_tick_candle", self.candle_tick)
         print("saved tick data")
         self.s.enter(60, 1, self.save_tick_data, ())
 
@@ -126,7 +135,7 @@ class DataHandler:
             print("connection error")
         to_sleep_1min = 60 - time.time() % 60
         print(to_sleep_1min)
-        self.s.enter(to_sleep_1min+1, 1, self.save_1min_candle, ())
+        self.s.enter(to_sleep_1min + 1, 1, self.save_1min_candle, ())
 
     def save_5min_candle(self):
         try:
@@ -135,7 +144,7 @@ class DataHandler:
         except:
             print("connection error")
         to_sleep_5min = 300 - time.time() % 300
-        self.s.enter(to_sleep_5min+1, 1, self.save_5min_candle, ())
+        self.s.enter(to_sleep_5min + 1, 1, self.save_5min_candle, ())
 
     def save_15min_candle(self):
         try:
@@ -144,7 +153,7 @@ class DataHandler:
         except:
             print("connection error")
         to_sleep_15min = 900 - time.time() % 900
-        self.s.enter(to_sleep_15min+1, 1, self.save_15min_candle, ())
+        self.s.enter(to_sleep_15min + 1, 1, self.save_15min_candle, ())
 
     def save_30min_candle(self):
         try:
@@ -153,18 +162,21 @@ class DataHandler:
         except:
             print("connection error")
         to_sleep_30min = 1800 - time.time() % 1800
-        self.s.enter(to_sleep_30min+1, 1, self.save_30min_candle, ())
+        self.s.enter(to_sleep_30min + 1, 1, self.save_30min_candle, ())
 
     def save_60min_candle(self):
-        try:
-            self.update_candle("60min", 10)
-            self.update_candle("1day", 10)
-            print("saved 60min candle")
-            print("saved 1day candle")
-        except:
-            print("connection error")
+        self.get_tickers()
+        for idx, symbol in enumerate(self.tickers):
+            print(str(idx) + " " + symbol)
+            try:
+                # self.update_candle("60min", 10, symbol)
+                self.update_candle("1day", 2000, symbol)
+                # print("saved 60min candle")
+            except:
+                print("connection error")
+        print("saved 1day candle")
         to_sleep_60min = 3600 - time.time() % 3600
-        self.s.enter(to_sleep_60min+1, 1, self.save_60min_candle, ())
+        self.s.enter(to_sleep_60min + 1, 1, self.save_60min_candle, ())
 
     # def save_1day_candle(self):
     #     try:
@@ -183,12 +195,17 @@ class DataHandler:
         self.s.enter(10, 1, self.save_trade_data, ())
 
     def update_candle_data(self):
-        self.update_trade(2000)
-        self.s.enter(0, 1, self.save_trade_data, ())
-        self.s.enter(0, 1, self.save_1min_candle, ())
-        self.s.enter(0, 1, self.save_5min_candle, ())
-        self.s.enter(0, 1, self.save_15min_candle, ())
-        self.s.enter(0, 1, self.save_30min_candle, ())
+        # for idx, symbol in enumerate(self.tickers):
+        #     print(str(idx)+" "+symbol)
+        #     try:
+        #         self.update_trade(100, symbol)
+        #     except:
+        #         print("wrong ticker")
+        # self.s.enter(0, 1, self.save_trade_data, ())
+        # self.s.enter(0, 1, self.save_1min_candle, ())
+        # self.s.enter(0, 1, self.save_5min_candle, ())
+        # self.s.enter(0, 1, self.save_15min_candle, ())
+        # self.s.enter(0, 1, self.save_30min_candle, ())
         self.s.enter(0, 1, self.save_60min_candle, ())
         self.s.run()
 
@@ -199,12 +216,10 @@ class DataHandler:
         self.s.enter(60, 1, self.save_tick_data, ())
 
 
-m = DataHandler("btcusdt")
+m = DataHandler()
 m.update_candle_data()
 
-
 # m.update_data("ethusdt", '1min')
-
 # conn = sqlite3.connect('market.db', timeout=10)
 # table = 'ethusdt_trade'
 # data = pd.read_sql('select * from ' + table, conn)
