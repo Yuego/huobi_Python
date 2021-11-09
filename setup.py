@@ -13,7 +13,7 @@ setup(
               'huobi.service.subuser', 'huobi.service.algo',
               'huobi.model', 'huobi.model.account', 'huobi.model.margin', 'huobi.model.market', 'huobi.model.trade',
               'huobi.model.wallet', 'huobi.model.generic', 'huobi.model.etf', 'huobi.model.subuser', 'huobi.model.algo',
-              'huobi.connection', 'huobi.connection.impl', "performance", "tests"
+              'huobi.connection', 'huobi.connection.impl', "performance",
               ],
     install_requires=['requests', 'apscheduler', 'websocket-client', 'urllib3']
 )
